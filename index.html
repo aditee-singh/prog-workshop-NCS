@@ -13,6 +13,14 @@
     <!--[if lt IE 9]>
 			<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+        <style>
+            table, th, td {
+                margin-right: 50px;
+              border: 1px solid black;
+              border-right: 1px solid white;
+              /* border-collapse: collapse; */
+            }
+        </style>
 </head>
 
 <body>
@@ -33,7 +41,7 @@
                     <h2 style="font-size: 90px !important">
                         Hello <span style="color: #ffdf3f">Everyone!</span>
                     </h2>
-                    <h5>Welcome to our Beginner's Workshop on C</h5>
+                    <h5>Welcome to our Advanced Workshop on C</h5>
                     <h5>Nibble Computer Society</h5>
                     <br />
 
@@ -87,10 +95,28 @@
                     <img style="height: 650px;" src="assets/complexity-2.png" alt="" />
                 </section>
                 <section>
-                    <img src="" alt="" />
+                    <p style="background-color: white; color: black;">N = 1000033 ( Prime number ) <br>
+                        Time taken by A's program = 1 ms * number of divisions <br>
+                                                  = 1 ms * 1000033 <br>
+                                                  = approximately 1000 seconds or 16.7 mins. <br>
+                                                  <br>
+                        
+                        Time taken by B's program = 1ms * number of divisions <br>
+                                                  = 1ms * square root of 1000033 <br>
+                                                  = approximately 1000ms = 1 second. <br>
+                        </p>
                 </section>
                 <section>
-                    <img src=" alt=" />
+                    <p style="background-color: white; color: black;">N = 1500450271 ( Prime number ) <br>
+                        Time taken by A's program = 1 ms * number of divisions <br>
+                                                  = 1 ms * 1500450271 <br>
+                                                  = approximately 1000000 seconds or 11.5 days. <br>
+                                                  <br>
+                        
+                        Time taken by B's program = 1ms * number of divisions <br>
+                                                  = 1ms * square root of 1500450271 <br>
+                                                  = approximately 40000ms = 40 seconds. <br>
+                        </p>
                 </section>
                 <section>
                     <img src="assets/complexity-3.png" alt="" />
@@ -262,10 +288,10 @@
                     <h3>Types of Linked list</h3>
                 </section>
                 <section>
-                    <img src="assets/types-of-linked-list.png" alt="" />
+                    <img style="height: 500px;" src="assets/types-of-linked-list.png" alt="" />
                 </section>
                 <section>
-                    <h4>There are 3 different implementations of Linked List available, they are:</h4>
+                    <p>There are 3 different implementations of Linked List available, they are:</p>
                     <ul>
                         <li>Singly linked list.</li>
                         <li>Doubly linked list.</li>
@@ -280,7 +306,7 @@
                         address part i.e. next, which points to the next node in the sequence of nodes.</p>
                 </section>
                 <section>
-                    <img src="assets/singly-linked-list.png" alt="" />
+                    <img style="height: 300px;" src="assets/singly-linked-list.png" alt="" />
                 </section>
             </section>
             <section>
@@ -290,7 +316,7 @@
                          one for the previous node and one for the next node.</p>
                 </section>
                 <section>
-                    <img src="assets/doubly-linked-list.png" alt="" />
+                    <img style="height: 300px;" src="assets/doubly-linked-list.png" alt="" />
                 </section>
             </section>
             <section>
@@ -300,8 +326,165 @@
                         of the first node hence forming a circular chain.</p>
                 </section>
                 <section>
-                    <img src="assets/circular-linked-list.png" alt="" />
+                    <img style="height: 300px;" src="assets/circular-linked-list.png" alt="" />
                 </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Stacks</h3>
+                </section>
+                <section>
+                    <h4>What is a Stack?</h4>
+                    <p>Stack is a linear data structure which follows a particular order in which 
+                        the operations are performed. The order may be LIFO(Last In First Out) or 
+                        FILO(First In Last Out).</p>
+                </section>
+                <section>
+                    <img style="height: 400px;" src="assets/stack-data-structure.png" alt="" />
+                </section>
+                <section>
+                    <h3>Basic features of Stack</h3>
+                    <ul>
+                        <li>Stack is an ordered list of similar data types.</li>
+                        <li>Stack is a LIFO(Last in First out) structure or we can say 
+                            FILO(First in Last out).</li>
+                        <li>push() function is used to insert new elements into the Stack and 
+                            pop() function is used to remove an element from the stack. Both 
+                            insertion and removal are allowed at only one end of Stack called Top.</li>
+                        <li>Stack is said to be in Overflow state when it is completely full and is 
+                            said to be in Underflow state if it is completely empty.</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Algorithm for PUSH operation</h3>
+                    <ul>
+                        <li>Check if the stack is full or not.</li>
+                        <li>If the stack is full, then print an error of overflow and exit the program.</li>
+                        <li>f the stack is not full, then increment the top and add the element.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Algorithm for POP operation</h3>
+                    <ul>
+                        <li>Check if the stack is empty or not.</li>
+                        <li>If the stack is empty, then print an error of underflow and exit the program.</li>
+                        <li>f the stack is not empty, then print the element at the top and decrement the top.</li>
+                    </ul>
+                </section>
+                <section>
+                    <table>
+                        <tr>
+                          <th>Position of Top</th>
+                          <th>Status of stack</th>
+                        </tr>
+                        <tr>
+                          <td>-1</td>
+                          <td>Stack is empty</td>
+                        </tr>
+                        <tr>
+                          <td>0</td>
+                          <td>Only one element is stack</td>
+                        </tr>
+                        <tr>
+                            <td>N-1</td>
+                            <td>Stack is full</td>
+                          </tr>
+                          <tr>
+                            <td>N</td>
+                            <td>Overflow state od stack</td>
+                          </tr>
+                      </table>
+                </section>
+                <section>
+                    <img src="assets/pasted image 0.png" alt="" />
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Queues</h3>
+                </section>
+                <section>
+                    <p>Queue is also an abstract data type or a linear data structure 
+                        in which the first element is inserted from one end called the 
+                        REAR(also called tail), and the removal of the existing element 
+                        takes place from the other end called FRONT(also called head).</p>
+                </section>
+                <section>
+                    <img style="height: 500px;" src="assets/queue.png" alt="" />
+                </section>
+                <section>
+                    <h3>Basic features of Queues</h3>
+                    <ul>
+                        <li>Like stack, queue is also an ordered list of elements of similar data types.</li>
+                        <li>Queue is a FIFO( First in First Out ) structure.</li>
+                        <li>Once a new element is inserted into the Queue, all the elements inserted before the 
+                            new element in the queue must be removed, to remove the new element.</li>
+                        <li>peek( ) function is often used to return the value of the first element without dequeuing it.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Algorithm of ENQUEUE</h3>
+                    <ul>
+                        <li>Check if the queue is full or not.</li>
+                        <li>If the queue is full, then print an overflow error and exit the program.</li>
+                        <li>If the queue is not full, then increment the tail and add the element.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Algorithm of DEQUEUE</h3>
+                    <ul>
+                        <li>Check if the queue is empty or not.</li>
+                        <li>If the queue is empty, then print an underflow error and exit the program.</li>
+                        <li>If the queue is not empty, then print the element at the head and increment the head.</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Recursion</h3>
+                    <p>Way to answer all the questions about everything.</p>    
+                </section>
+                <section>
+                    <p>The process in which a function calls itself directly or indirectly is called 
+                        recursion and the corresponding function is called a recursive function.</p>
+                </section>
+                <section>
+                    <img src="assets/recursion.png" alt="" />
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h4>Sieve of Eratosthenes</h4>
+                </section>
+                <section>
+                    <p>In mathematics, the sieve of Eratosthenes is a simple, ancient algorithm for 
+                        finding all prime numbers up to any given limit.
+                        It does so by iteratively marking as composite (i.e., not prime) the multiples 
+                        of each prime, starting with the first prime number, 2. The multiples of a 
+                        given prime are generated as a sequence of numbers starting from that prime, 
+                        with constant difference between them that is equal to that prime.[1] This is 
+                        the sieve's key distinction from using trial division to sequentially test 
+                        each candidate number for divisibility by each prime.
+                    </p>
+                </section>
+            </section>
+            <section data-transition="zoom">
+                <h3>That's All Folks</h3>
+                <p>For Any Queries</p>
+                <a href="http://www.facebook.com/nibblecomputersociety" target="_blank">
+                    <img src="assets/facebook.svg" width="64px" />
+                </a> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.github.com/ncs-jss" target="_blank">
+                        <img src="assets/github-icon.svg" height="64px" />
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="http://www.hackncs.com" target="_blank">
+                        <img src="assets/ncsncs_logo.png" height="64px" />
+                    </a>
+                    <h3>Thank You</h3>
+                    <p>Nibble Computer Society</p>
             </section>
         </div>
     </div>
